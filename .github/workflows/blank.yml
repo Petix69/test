@@ -28,6 +28,3 @@ jobs:
         port: ${{ secrets.SERVER_PORT }}
         script: |
           cd /var/www/html/test 
-          eval "$(ssh-agent -s)"
-          ssh-add ~/.ssh/id_ed25519
-          git pull
