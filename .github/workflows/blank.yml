@@ -27,4 +27,7 @@ jobs:
         password: ${{ secrets.SERVER_PASSWORD }}
         port: ${{ secrets.SERVER_PORT }}
         script: |
-          cd /var/www/html/test
+          cd /var/www/html/test 
+          git pull
+          eval "$(ssh-agent -s)"
+          ssh-add ~/.ssh/id_ed25519
