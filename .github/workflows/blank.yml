@@ -28,4 +28,3 @@ jobs:
         port: ${{ secrets.SERVER_PORT }}
         script: |
           cd /var/www/html/test
-          git pull
